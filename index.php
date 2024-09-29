@@ -14,10 +14,10 @@
 ?>
 <!DOCTYPE html>
 <head>
-    <title>Exercício 3 - PHP</title>
+    <title>Exercício 2 - PHP</title>
 </head>
 <body>
-    <h1>Exercício 3 - PHP</h1>
+    <h1>Exercício 2 - PHP</h1>
 
     <ul>
         <li>
