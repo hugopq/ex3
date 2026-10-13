@@ -16,7 +16,8 @@
         {
             if($product->id == $id)
             {
-                $product->stock++;          
+                $product->stock++;
+                break;          
             }
         }
     }

@@ -17,7 +17,8 @@
             if($product->id == $id)
             {
                 if( $product->stock > 0)
-                    $product->stock--;          
+                    $product->stock--;  
+                break;        
             }
         }
     }

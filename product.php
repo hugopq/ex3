@@ -17,7 +17,8 @@
         {
             if($pd->id == $id)
             {
-                $product = $pd;            
+                $product = $pd; 
+                break;           
             }
         }
     }
@@ -33,9 +34,12 @@
     </h2>
     <form action="saveproduct.php" method="POST">
         <input type="hidden" name="id" value="<?php print $id; ?>">
-        nome:<input type="text" name="name" <?php print (isset($product))?"value='".$product->name."'":""; ?>/><br>
-        descrição:<input type="text" name="desc" <?php print (isset($product))?"value='".$product->description."'":""; ?>/><br>
-        valor:<input type="number" name="value" <?php print (isset($product))?"value='".$product->value."'":""; ?>/><br>     
+        nome:<input type="text" name="name" 
+            <?php print (isset($product))?"value='".$product->name."'":""; ?>/><br>
+        descrição:<input type="text" name="desc" 
+            <?php print (isset($product))?"value='".$product->description."'":""; ?>/><br>
+        valor:<input type="number" name="value"
+            <?php print (isset($product))?"value='".$product->value."'":""; ?>/><br>     
         <input type="submit" value="Criar">   
     </form>
 </body>

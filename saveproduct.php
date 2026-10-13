@@ -33,7 +33,8 @@
             {
                 $product->name = $name;
                 $product->description = $desc;
-                $product->value = $value;            
+                $product->value = $value;  
+                break;          
             }
         }
     }

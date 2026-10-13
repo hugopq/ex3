@@ -33,9 +33,9 @@ class product
         $str = "";
         $str = "<li>";
         $str.= " Produto ".$this->id.": ".$this->name." - ".substr($this->description,0,15)."... - €".$this->value." STOCK: ".$this->stock;
-        $str.= "<a href='./product.php?p=".$this->id."'> editar </a>";
-        $str.= "<a href='./sbuy.php?p=".$this->id."'> comprar </a>";
-        $str.= "<a href='./sell.php?p=".$this->id."'> vender </a>";
+        $str.= "<a href='./product.php?p=".$this->id."'> ✏️ </a>";
+        $str.= "<a href='./sbuy.php?p=".$this->id."'> ➕ </a>";
+        $str.= "<a href='./sell.php?p=".$this->id."'> ➖ </a>";
         $str.= "</li>";
 
         return $str;
